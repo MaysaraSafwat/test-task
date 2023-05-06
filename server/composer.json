@@ -1,0 +1,18 @@
+{
+  "name": "pc/scandiweb-test",
+  "description": "Test Task",
+  "license": "MCIT",
+  "autoload": {
+    "psr-4": {
+      "Pc\\scandiwebTest\\": "src/"
+    },
+    
+    "files": [
+      "config/DBconfig.php"
+    ],
+    "classmap": [
+      "models"
+    ]
+  },
+  "require": {}
+}
