@@ -8,10 +8,11 @@
     },
     
     "files": [
-      "config/DBconfig.php"
+      "config/DBconfig.php",
+      "api/read.php"
     ],
     "classmap": [
-      "models"
+      "classes"
     ]
   },
   "require": {}

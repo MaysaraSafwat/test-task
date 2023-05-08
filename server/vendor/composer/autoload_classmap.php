@@ -6,7 +6,11 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Book' => $baseDir . '/classes/Book.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'DBHandler' => $baseDir . '/models/DBHandler.php',
-    'MYSQLHandler' => $baseDir . '/models/MYSQLHandler.php',
+    'DBHandler' => $baseDir . '/classes/DBHandler.php',
+    'DVD' => $baseDir . '/classes/DVD.php',
+    'MYSQLHandler' => $baseDir . '/classes/MYSQLHandler.php',
+    'Product' => $baseDir . '/classes/Product.php',
+    'Request' => $baseDir . '/classes/Request.php',
 );

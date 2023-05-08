@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     '151788ad1d48c3a9a80ac765fe3bb284' => $baseDir . '/config/DBconfig.php',
+    '9deca2567ad12913d865b6b4938ff275' => $baseDir . '/api/read.php',
 );
