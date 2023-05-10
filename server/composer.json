@@ -9,11 +9,16 @@
     
     "files": [
       "config/DBconfig.php",
-      "api/read.php"
+      "config/config.php",
+      "routes/web.php"
+
     ],
     "classmap": [
-      "classes"
+      "classes",
+      "utils"
     ]
   },
-  "require": {}
+  "require": {
+    "pecee/simple-router": "5.3.0.5"
+  }
 }

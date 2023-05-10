@@ -1,13 +1,12 @@
 <?php
 require_once("vendor/autoload.php");
-header("Content-type: application/json; charset=UTF-8");
+use Pecee\SimpleRouter\SimpleRouter;
 
-$parts = explode("/",$_SERVER["REQUEST_URI"]);
+require_once './routes/web.php';
 
-if($parts[3] != 'products'){
-  http_response_code(404);
-  exit();
-}
-$type= $parts[4]?? NULL;
-$request = new Request();
-$request->processRequest($_SERVER["REQUEST_METHOD"], $type);
+//SimpleRouter::enableMultiRouteRendering(false);
+// Start the routing
+echo SimpleRouter::start();
+// SimpleRouter::get('/products/{$type}', function ($type) {
+//   echo 'product with type: ' . $type;
+// });
