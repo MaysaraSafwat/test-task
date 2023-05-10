@@ -7,10 +7,16 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Book' => $baseDir . '/classes/Book.php',
+    'BookValidation' => $baseDir . '/utils/BookValidator.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'DBHandler' => $baseDir . '/classes/DBHandler.php',
     'DVD' => $baseDir . '/classes/DVD.php',
+    'DvdValidation' => $baseDir . '/utils/DvdValidator.php',
+    'Furniture' => $baseDir . '/classes/Furniture.php',
+    'FurnitureValidation' => $baseDir . '/utils/FurnitureValidator.php',
     'MYSQLHandler' => $baseDir . '/classes/MYSQLHandler.php',
     'Product' => $baseDir . '/classes/Product.php',
+    'ProductType' => $baseDir . '/classes/ProductType.php',
+    'ProductValidation' => $baseDir . '/utils/ProductValidator.php',
     'Request' => $baseDir . '/classes/Request.php',
 );

@@ -17,8 +17,6 @@ class MYSQLHandler implements DBHandler
     {
         $this->_table = $table;
          $this->connect();
-        // $this->_primary_key = $primary_key;
-        // $this->rawCount =  $this->getCount($this->_table);
         $this->conn = $this->_db_handler;
     }
 

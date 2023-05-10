@@ -8,17 +8,23 @@ class ComposerStaticInit71358bd7818a595df791ec48be6430a5
 {
     public static $files = array (
         '151788ad1d48c3a9a80ac765fe3bb284' => __DIR__ . '/../..' . '/config/DBconfig.php',
-        '9deca2567ad12913d865b6b4938ff275' => __DIR__ . '/../..' . '/api/read.php',
+        'a9080c131fc1b24e78f396553a5faeb2' => __DIR__ . '/../..' . '/config/config.php',
+        'e8d6b2eef56712f8bd688bfeab57fa4e' => __DIR__ . '/../..' . '/routes/web.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
+            'Pecee\\' => 6,
             'Pc\\scandiwebTest\\' => 17,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Pecee\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee',
+        ),
         'Pc\\scandiwebTest\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
@@ -27,11 +33,17 @@ class ComposerStaticInit71358bd7818a595df791ec48be6430a5
 
     public static $classMap = array (
         'Book' => __DIR__ . '/../..' . '/classes/Book.php',
+        'BookValidation' => __DIR__ . '/../..' . '/utils/BookValidator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'DBHandler' => __DIR__ . '/../..' . '/classes/DBHandler.php',
         'DVD' => __DIR__ . '/../..' . '/classes/DVD.php',
+        'DvdValidation' => __DIR__ . '/../..' . '/utils/DvdValidator.php',
+        'Furniture' => __DIR__ . '/../..' . '/classes/Furniture.php',
+        'FurnitureValidation' => __DIR__ . '/../..' . '/utils/FurnitureValidator.php',
         'MYSQLHandler' => __DIR__ . '/../..' . '/classes/MYSQLHandler.php',
         'Product' => __DIR__ . '/../..' . '/classes/Product.php',
+        'ProductType' => __DIR__ . '/../..' . '/classes/ProductType.php',
+        'ProductValidation' => __DIR__ . '/../..' . '/utils/ProductValidator.php',
         'Request' => __DIR__ . '/../..' . '/classes/Request.php',
     );
 

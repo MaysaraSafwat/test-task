@@ -69,7 +69,7 @@ abstract class Product {
          return $products;
         }
 
-        public function mass_delete__products($ids){
+        public function mass_delete_products($ids){
           return $this->db->mass_delete($ids);
         }
 
