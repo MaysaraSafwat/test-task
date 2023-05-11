@@ -4,8 +4,8 @@ use Pecee\SimpleRouter\SimpleRouter;
 
 
   
-  SimpleRouter::group(['prefix' => '/scandiweb-test-task/server/'], function () {
-    SimpleRouter::get('/products', function ()    {
+  SimpleRouter::group(['prefix' => '/'], function () {
+    SimpleRouter::get('products', function ()    {
        try {
         $product = new Book();
         $products = $product->get_all_products();
@@ -16,7 +16,7 @@ use Pecee\SimpleRouter\SimpleRouter;
         }
     });
 
-    SimpleRouter::post('/products/{type}' , function($type){
+    SimpleRouter::post('products/{type}' , function($type){
         //create new product
         try {
             $data = (array) json_decode(file_get_contents("php://input"), true, 512, JSON_BIGINT_AS_STRING);
@@ -28,7 +28,7 @@ use Pecee\SimpleRouter\SimpleRouter;
         }
     });
 
-    SimpleRouter::post('/products' , function(){
+    SimpleRouter::post('products' , function(){
         //mass delete products
         try {
             $data = (array) json_decode(file_get_contents("php://input"), true, 512, JSON_BIGINT_AS_STRING);
