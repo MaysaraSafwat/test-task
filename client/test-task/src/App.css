@@ -1,0 +1,53 @@
+nav{
+  padding: 3%;
+  border-bottom: 4px solid lightgray;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-brand {
+  font-size: 2em;
+  text-decoration: none;
+  color : #d13e3e; 
+  font-weight: 700;
+ 
+}
+
+.nav-btns {
+  width: 50%;
+  text-align: end;
+}
+.nav-btns button {
+  background-color: lightgray;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 2% 5%;
+  margin: 1%;
+  color : #1c2121;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+}
+#delete-product-btn{
+ 
+  border: 2px solid #d13e3e;
+  background-color: transparent;
+  color : #d13e3e;
+}
+button:hover{
+  opacity: 0.7;
+}
+
+
+/* FOOTER */
+.footer {
+  height: 15vh;
+  background-color: #e8e6e6;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
