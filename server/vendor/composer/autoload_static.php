@@ -44,7 +44,6 @@ class ComposerStaticInit71358bd7818a595df791ec48be6430a5
         'Product' => __DIR__ . '/../..' . '/classes/Product.php',
         'ProductType' => __DIR__ . '/../..' . '/classes/ProductType.php',
         'ProductValidation' => __DIR__ . '/../..' . '/utils/ProductValidator.php',
-        'Request' => __DIR__ . '/../..' . '/classes/Request.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

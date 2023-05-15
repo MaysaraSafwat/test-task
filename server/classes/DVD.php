@@ -20,7 +20,6 @@ class DVD extends Product{
        $errors =$validateDvd->get_errors();
        if(count($errors) > 0) {
            http_response_code(400);
-           var_dump($errors);
        } else {
            try {
                $dvdData = $validateDvd->create_product_data();

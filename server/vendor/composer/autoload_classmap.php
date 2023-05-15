@@ -18,5 +18,4 @@ return array(
     'Product' => $baseDir . '/classes/Product.php',
     'ProductType' => $baseDir . '/classes/ProductType.php',
     'ProductValidation' => $baseDir . '/utils/ProductValidator.php',
-    'Request' => $baseDir . '/classes/Request.php',
 );

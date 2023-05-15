@@ -20,14 +20,17 @@ class Book extends Product{
         $errors =$validateBook->get_errors();
         if(count($errors) > 0) {
             http_response_code(400);
-            var_dump($errors);
+            $response = array("message"=> $errors);
+            return json_encode($response);
         } else {
             try {
                 $bookData = $validateBook->create_product_data();
                 $this->db->create($bookData);
             }
             catch(Exception $e) {
-                return "Couldn't create Product";
+                http_response_code(500);
+                $response = array("message"=>"something went wrong".$e);
+                return json_encode($response);
             }
         }
     }

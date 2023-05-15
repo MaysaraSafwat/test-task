@@ -20,7 +20,6 @@ class Furniture extends Product{
        $errors =$validateFurniture->get_errors();
        if(count($errors) > 0) {
            http_response_code(400);
-           var_dump($errors);
        } else {
            try {
                $dvdData = $validateFurniture->create_product_data();

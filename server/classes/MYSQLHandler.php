@@ -52,8 +52,6 @@ class MYSQLHandler implements DBHandler
     }
 
     public function create($data){
-           var_dump($data);
-        
             $coulmns = '';
             $values = '';
     
@@ -71,7 +69,7 @@ class MYSQLHandler implements DBHandler
             $this->sql = "INSERT INTO products ($coulmns) VALUES ($values);";
            
             $this->execute();
-            return $this;
+           // return $this;
         
     }
 
@@ -83,7 +81,7 @@ class MYSQLHandler implements DBHandler
 
     public function execute()
     {
-         print_r($this->sql);
+         //print_r($this->sql);
         // die;
         $this->query = mysqli_query($this->conn, $this->sql);
         if (mysqli_affected_rows($this->conn) > 0) {
